@@ -11,6 +11,9 @@ function Add(){
     const content = document.getElementById("content");
     const user_cart = document.getElementById("user-cart")
 
+    if((input.value<=nabidka.length) && (input.value> 0) && (!isNaN(input.value))){
+        kosik.push(nabidka[input.value -1])
+    }
     if(input == 1){
         kosik.push(nabidka[0]);
     }
